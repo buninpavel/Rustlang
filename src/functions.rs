@@ -11,6 +11,8 @@ pub fn run() {
   let n3: i32 = 10;
   let add_nums = |n1: i32, n2: i32| n1 + n2 + n3;
   println!("C Sum: {}", add_nums(3, 3));
+
+  some_procedure(2.3, 1);
 }
 
 fn greeting(greet: &str, name: &str) {
@@ -19,4 +21,8 @@ fn greeting(greet: &str, name: &str) {
 
 fn add(n1: i32, n2: i32) -> i32 {
   n1 + n2
+}
+
+fn some_procedure(param_a: f32, param_b: i8) {
+  println!("a {} b {}", param_a, param_b);
 }
